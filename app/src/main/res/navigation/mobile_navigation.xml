@@ -9,7 +9,7 @@
     <fragment
         android:id="@+id/nav_main"
         android:name="com.example.navegacionfragmentsandroid.MainFragment"
-        android:label="Nav Dest Main (start)"
+        android:label="America"
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_main_to_north"
@@ -21,7 +21,7 @@
     <fragment
         android:id="@+id/northFragment"
         android:name="com.example.navegacionfragmentsandroid.NorthFragment"
-        android:label="fragment_north"
+        android:label="North America"
         tools:layout="@layout/fragment_north" >
         <action
             android:id="@+id/action_north_to_canada"
@@ -37,7 +37,7 @@
     <fragment
         android:id="@+id/southFragment"
         android:name="com.example.navegacionfragmentsandroid.SouthFragment"
-        android:label="fragment_south"
+        android:label="South America"
         tools:layout="@layout/fragment_south" >
         <action
             android:id="@+id/action_south_to_brazil"
@@ -50,27 +50,27 @@
     <fragment
         android:id="@+id/EEUUFragment"
         android:name="com.example.navegacionfragmentsandroid.EEUUFragment"
-        android:label="fragment_e_e_u_u"
+        android:label="Estados Unidos"
         tools:layout="@layout/fragment_e_e_u_u" />
     <fragment
         android:id="@+id/brazilFragment"
         android:name="com.example.navegacionfragmentsandroid.BrazilFragment"
-        android:label="fragment_brazil"
+        android:label="Brazil"
         tools:layout="@layout/fragment_brazil" />
     <fragment
         android:id="@+id/argentinaFragment"
         android:name="com.example.navegacionfragmentsandroid.ArgentinaFragment"
-        android:label="fragment_argentina"
+        android:label="Argentina"
         tools:layout="@layout/fragment_argentina" />
     <fragment
         android:id="@+id/canadaFragment"
         android:name="com.example.navegacionfragmentsandroid.CanadaFragment"
-        android:label="fragment_canada"
+        android:label="Canada"
         tools:layout="@layout/fragment_canada" />
     <fragment
         android:id="@+id/mexicoFragment"
         android:name="com.example.navegacionfragmentsandroid.MexicoFragment"
-        android:label="fragment_mexico"
+        android:label="Mexico"
         tools:layout="@layout/fragment_mexico" />
 
 
