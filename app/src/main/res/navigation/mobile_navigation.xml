@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_main">
+
+
+    <fragment
+        android:id="@+id/nav_main"
+        android:name="com.example.navegacionfragmentsandroid.MainFragment"
+        android:label="Nav Dest Main (start)"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_north"
+            app:destination="@id/northFragment" />
+        <action
+            android:id="@+id/action_main_to_south"
+            app:destination="@id/southFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/northFragment"
+        android:name="com.example.navegacionfragmentsandroid.NorthFragment"
+        android:label="fragment_north"
+        tools:layout="@layout/fragment_north" />
+    <fragment
+        android:id="@+id/southFragment"
+        android:name="com.example.navegacionfragmentsandroid.SouthFragment"
+        android:label="fragment_south"
+        tools:layout="@layout/fragment_south" />
+
+
+</navigation>
