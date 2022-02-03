@@ -22,12 +22,56 @@
         android:id="@+id/northFragment"
         android:name="com.example.navegacionfragmentsandroid.NorthFragment"
         android:label="fragment_north"
-        tools:layout="@layout/fragment_north" />
+        tools:layout="@layout/fragment_north" >
+        <action
+            android:id="@+id/action_north_to_canada"
+            app:destination="@id/canadaFragment" />
+        <action
+            android:id="@+id/action_north_to_eeuu"
+            app:destination="@id/EEUUFragment" />
+        <action
+            android:id="@+id/action_north_to_mexico"
+            app:destination="@id/mexicoFragment" />
+    </fragment>
+
     <fragment
         android:id="@+id/southFragment"
         android:name="com.example.navegacionfragmentsandroid.SouthFragment"
         android:label="fragment_south"
-        tools:layout="@layout/fragment_south" />
+        tools:layout="@layout/fragment_south" >
+        <action
+            android:id="@+id/action_south_to_brazil"
+            app:destination="@id/brazilFragment" />
+        <action
+            android:id="@+id/action_south_to_argentina"
+            app:destination="@id/argentinaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/EEUUFragment"
+        android:name="com.example.navegacionfragmentsandroid.EEUUFragment"
+        android:label="fragment_e_e_u_u"
+        tools:layout="@layout/fragment_e_e_u_u" />
+    <fragment
+        android:id="@+id/brazilFragment"
+        android:name="com.example.navegacionfragmentsandroid.BrazilFragment"
+        android:label="fragment_brazil"
+        tools:layout="@layout/fragment_brazil" />
+    <fragment
+        android:id="@+id/argentinaFragment"
+        android:name="com.example.navegacionfragmentsandroid.ArgentinaFragment"
+        android:label="fragment_argentina"
+        tools:layout="@layout/fragment_argentina" />
+    <fragment
+        android:id="@+id/canadaFragment"
+        android:name="com.example.navegacionfragmentsandroid.CanadaFragment"
+        android:label="fragment_canada"
+        tools:layout="@layout/fragment_canada" />
+    <fragment
+        android:id="@+id/mexicoFragment"
+        android:name="com.example.navegacionfragmentsandroid.MexicoFragment"
+        android:label="fragment_mexico"
+        tools:layout="@layout/fragment_mexico" />
 
 
 </navigation>

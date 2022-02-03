@@ -2,6 +2,9 @@ package com.example.navegacionfragmentsandroid
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.navegacionfragmentsandroid.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

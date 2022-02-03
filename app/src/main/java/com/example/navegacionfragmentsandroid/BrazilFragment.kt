@@ -6,10 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
-import com.example.navegacionfragmentsandroid.databinding.FragmentSouthBinding
+import com.example.navegacionfragmentsandroid.databinding.FragmentBrazilBinding
+import com.example.navegacionfragmentsandroid.databinding.FragmentNorthBinding
 
-class SouthFragment : Fragment() {
-    private var _binding: FragmentSouthBinding? = null
+class BrazilFragment : Fragment() {
+    private var _binding: FragmentBrazilBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -17,7 +18,7 @@ class SouthFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentSouthBinding.inflate(inflater, container, false)
+        _binding = FragmentBrazilBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -26,9 +27,8 @@ class SouthFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val navController = Navigation.findNavController(view)
-        binding.zoomBrazil.setOnClickListener({navController.navigate(R.id.action_south_to_brazil)})
-        binding.zoomArgentina.setOnClickListener({navController.navigate(R.id.action_south_to_argentina)})
-        }
+
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
