@@ -26,8 +26,8 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val navController = findNavController()
-        binding.zoomNorth.setOnClickListener({navController.navigate(R.id.action_main_to_north)})
-        binding.zoomSouth.setOnClickListener{navController.navigate(R.id.action_main_to_south)}
+        binding.zoomNorth.setOnClickListener({navController.navigate(MainFragmentDirections.actionMainToNorth())})
+        binding.zoomSouth.setOnClickListener{navController.navigate(MainFragmentDirections.actionMainToSouth())}
 
     }
 

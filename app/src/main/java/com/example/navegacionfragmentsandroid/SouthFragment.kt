@@ -26,8 +26,8 @@ class SouthFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val navController = Navigation.findNavController(view)
-        binding.zoomBrazil.setOnClickListener({navController.navigate(R.id.action_south_to_brazil)})
-        binding.zoomArgentina.setOnClickListener({navController.navigate(R.id.action_south_to_argentina)})
+        binding.zoomBrazil.setOnClickListener({navController.navigate(SouthFragmentDirections.actionSouthToBrazil())})
+        binding.zoomArgentina.setOnClickListener({navController.navigate(SouthFragmentDirections.actionSouthToArgentina())})
         }
 
     override fun onDestroyView() {

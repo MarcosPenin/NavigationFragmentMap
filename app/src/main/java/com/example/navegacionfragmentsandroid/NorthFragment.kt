@@ -29,9 +29,9 @@ class NorthFragment : Fragment() {
 
         val navController = Navigation.findNavController(view)
 
-        binding.zoomCanada.setOnClickListener({navController.navigate(R.id.action_north_to_canada)})
-        binding.zoomEEUU.setOnClickListener({navController.navigate(R.id.action_north_to_eeuu)})
-        binding.zoomMexico.setOnClickListener({navController.navigate(R.id.action_north_to_mexico)})
+        binding.zoomCanada.setOnClickListener({navController.navigate(NorthFragmentDirections.actionNorthToCanada())})
+        binding.zoomEEUU.setOnClickListener({navController.navigate(NorthFragmentDirections.actionNorthToEeuu())})
+        binding.zoomMexico.setOnClickListener({navController.navigate(NorthFragmentDirections.actionNorthToMexico())})
 
 
     }
